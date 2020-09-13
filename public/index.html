@@ -44,16 +44,8 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <script src="/js/db.js"></script>
   <script src="/js/index.js"></script>
-  <script>
-    if ("serviceWorker" in navigator) {
-      window.addEventListener("load", () => {
-        navigator.serviceWorker.register("service-worker.js").then(reg => {
-          console.log("We've found your service worker file!\n", reg);
-        });
-      });
-    }
-  </script>
 </body>
 
 </html>
